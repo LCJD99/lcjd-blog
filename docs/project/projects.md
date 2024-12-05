@@ -86,7 +86,7 @@ data:
 - 喜爱：2
 - 收获：3
 
-## MOOC
+## OPEN COURSE
 
 ### UCB CS61A
 
@@ -108,4 +108,4 @@ data:
 
 ### MIT 6.828
 
-- 
+- 时间：
