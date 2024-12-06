@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "my-world-study"
+version = "0.1.0"
+description = ""
+authors = ["LCJD <1721404800@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+mkdocs-material = "^9.5.47"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
