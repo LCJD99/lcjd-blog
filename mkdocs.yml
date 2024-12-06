@@ -1,52 +1,51 @@
-site_name: 凌晨九点的小宇宙
+site_name: 凌晨九点的技术站
 
 theme:
-  name: material
-  palette: 
+    name: material
+    palette:
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: deep purple
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
 
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: night)"
+          scheme: slate
+          primary: black
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
 
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: night)"
-      scheme: slate
-      primary: black
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-
-  language: zh
-  features:
-    - navigation.instant
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.path
-    - navigation.indexes
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - navigation.footer
+    language: zh
+    features:
+        - navigation.instant
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.path
+        - navigation.indexes
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - navigation.footer
 
 nav:
-  - 博客: 
-    - blog/index.md
-  - 标签: tags.md
-  - 项目: project/projects.md
-  - 关于: about.md
-
+    - 博客:
+        - blog/index.md
+    - 标签: tags.md
+    - 项目: project/projects.md
+    - 关于: about.md
 
 plugins:
-  - search
-  - blog:
-      blog_toc: true
-  - tags
+    - search
+    - blog:
+          blog_toc: true
+          post_url_format: "{date}/{slug}"
+    - tags:
 
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/dawn-at-9
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/LCJD99
