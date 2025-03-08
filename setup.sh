@@ -8,6 +8,8 @@ if [ ! -d "env" ]; then
     fi
 fi
 
-. env/bin/activate
+source env/bin/activate
 
-pip install -r requirements.txt
+pip install -r requirments.txt
+
+mkdocs build
